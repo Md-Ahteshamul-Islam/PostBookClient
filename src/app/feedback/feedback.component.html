@@ -1,0 +1,31 @@
+<div class="text-center" style="margin-top:100px;">
+    <!-- <Input class="float-right form-control"></Input> -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td colspan=4>
+                    <input style="width:300px;" class="float-right form-control" placeholder="Search Posts...">
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- {{Fedbacks | json}} -->
+            <tr class="bg-info" *ngFor="let obj of Fedbacks">
+                <td>{{obj.Title}}</td>
+                <td>{{obj.Title}}</td>
+                <td>{{obj.DateAdded}}</td>
+                <td>{{obj.Title}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+        
+
+<!-- <li *ngFor="let obj of Fedbacks">{{obj.Title}}</li> -->
+
+
+    <!-- <div *ngFor="let Post of Fedbacks">
+        <h2>{{Post.Title}}</h2>
+      </div> -->
+</div>
